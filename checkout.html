@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | Dois Elos Semijoias</title>
+    <meta name="description" content="Finalize sua compra na Dois Elos Semijoias." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="store-page checkout-page">
+    <header class="checkout-header">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-dois-elos-crop.jpeg" alt="Dois Elos Semijoias" /></a>
+      <span class="checkout-security">Compra segura</span>
+    </header>
+    <main class="checkout-page-main">
+      <div class="checkout-progress"><span class="active">1. Dados</span><span>2. Entrega</span><span>3. Pagamento</span></div>
+      <section class="checkout-page-layout">
+        <form class="checkout-panel" data-page-checkout-form>
+          <section><p class="eyebrow">Identificacao</p><h2>Como podemos falar com voce?</h2><div class="form-grid"><label>Nome completo<input name="name" required placeholder="Seu nome" /></label><label>E-mail<input name="email" type="email" required placeholder="voce@email.com" /></label><label>Telefone<input name="phone" placeholder="(61) 99999-9999" /></label><label>CPF<input name="taxId" placeholder="000.000.000-00" /></label></div></section>
+          <section><p class="eyebrow">Entrega</p><h2>Para onde vamos enviar?</h2><label class="saved-addresses">Endereco salvo<select name="savedAddress" data-saved-addresses><option value="">Cadastrar novo endereco</option></select></label><div class="form-grid"><label>CEP<input name="cep" required inputmode="numeric" placeholder="00000-000" /></label><label>Cidade<input name="city" required placeholder="Brasilia" /></label></div><label>Endereco<input name="address" required placeholder="Rua, numero, complemento" /></label><label><input type="checkbox" name="saveAddress" checked /> Salvar este endereco para proximas compras</label><p class="checkout-page-status" data-shipping-status></p><div class="delivery-options" data-delivery-options></div></section>
+          <section><p class="eyebrow">Pagamento</p><h2>Escolha como deseja pagar</h2><div class="payment-options"><label><input type="radio" name="paymentMethod" value="pix" checked /> Pix</label><label><input type="radio" name="paymentMethod" value="credit_card" /> Cartao de credito</label><label><input type="radio" name="paymentMethod" value="debit_card" /> Cartao de debito</label><label><input type="radio" name="paymentMethod" value="boleto" /> Boleto</label></div><p class="muted-copy">Voce sera direcionada ao ambiente seguro do PagBank para concluir o pagamento.</p></section>
+          <section class="checkout-trust">
+            <span>Site seguro com SSL</span>
+            <span>Garantia de 1 ano</span>
+            <span>Trocas conforme politica da loja</span>
+            <span>Frete gratis acima de R$199,99</span>
+          </section>
+          <button class="button primary full checkout-submit" type="submit">Ir para pagamento seguro</button><p class="checkout-page-status" data-page-checkout-status></p>
+        </form>
+        <aside class="checkout-summary" data-checkout-page-summary></aside>
+      </section>
+    </main>
+    <script src="products.js"></script><script src="shop.js"></script><script src="checkout.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produto | Dois Elos Semijoias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-dois-elos-crop.jpeg" alt="Dois Elos Semijoias" /></a>
+      <nav class="nav"><a href="index.html#colecao">Loja</a><a href="index.html#novidades">Novidades</a><a href="login.html">Login/Cadastrar</a><a href="admin.html">Admin</a></nav>
+      <button class="cart-button" type="button" data-open-cart><span>Sacola</span><strong data-cart-count>0</strong></button>
+    </header>
+    <main data-product-page></main>
+    <footer class="footer"><div><strong>Dois Elos Semijoias</strong><p>Compra pelo site com suporte pelo WhatsApp quando precisar.</p></div><div class="footer-links"><a href="https://instagram.com/doiselosemijoias" target="_blank" rel="noreferrer">@doiselosemijoias</a></div></footer>
+    <dialog class="cart-modal" data-cart-modal>
+      <div class="modal-header"><h2>Sua sacola</h2><button type="button" data-close-cart>x</button></div>
+      <div class="cart-items" data-cart-items></div>
+      <div class="cart-total"><span>Total</span><strong data-cart-total>R$ 0,00</strong></div>
+      <a class="button primary full" data-checkout href="#">Finalizar compra</a>
+    </dialog>
+    <script src="products.js"></script>
+    <script src="shop.js"></script>
+    <script src="layout.js"></script>
+    <script src="product.js"></script>
+  </body>
+</html>

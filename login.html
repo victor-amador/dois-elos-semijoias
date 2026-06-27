@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrar | Dois Elos Semijoias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-dois-elos-crop.jpeg" alt="Dois Elos Semijoias" /></a>
+      <nav class="nav"><a href="index.html#colecao">Loja</a><a href="index.html#novidades">Novidades</a><a href="admin.html">Admin</a></nav>
+      <button class="cart-button" type="button" data-open-cart><span>Sacola</span><strong data-cart-count>0</strong></button>
+    </header>
+    <main class="account-page">
+      <section class="account-copy">
+        <p class="eyebrow">Minha conta</p>
+        <h1>Login ou cadastro.</h1>
+        <p>Quem ja tem cadastro entra com e-mail e senha. Quem esta chegando cria a conta e ja fica logada.</p>
+      </section>
+      <form class="account-form" data-auth-form>
+        <div class="auth-tabs" role="tablist" aria-label="Login ou cadastro">
+          <button class="active" type="button" data-auth-mode="login">Entrar</button>
+          <button type="button" data-auth-mode="register">Cadastrar</button>
+        </div>
+        <label data-name-field class="hidden">Nome<input name="name" type="text" placeholder="Seu nome" /></label>
+        <label>E-mail<input name="email" type="email" placeholder="voce@email.com" required /></label>
+        <label>Senha<input name="password" type="password" placeholder="Sua senha" required /></label>
+        <div data-turnstile></div>
+        <button class="button primary full" type="submit" data-auth-submit>Entrar</button>
+        <p data-login-status></p>
+      </form>
+    </main>
+    <dialog class="cart-modal" data-cart-modal>
+      <div class="modal-header"><h2>Sua sacola</h2><button type="button" data-close-cart>x</button></div>
+      <div class="cart-items" data-cart-items></div>
+      <div class="cart-total"><span>Total</span><strong data-cart-total>R$ 0,00</strong></div>
+      <a class="button primary full" data-checkout href="#">Finalizar compra</a>
+    </dialog>
+    <script src="products.js"></script>
+    <script src="shop.js"></script>
+    <script src="layout.js"></script>
+    <script src="turnstile.js"></script><script src="login.js"></script><script src="support.js"></script>
+  </body>
+</html>

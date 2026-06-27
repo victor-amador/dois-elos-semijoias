@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rastrear Pedido | Dois Elos Semijoias</title>
+    <meta name="description" content="Acompanhe o status do seu pedido Dois Elos Semijoias." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-dois-elos-crop.jpeg" alt="Dois Elos Semijoias" /></a>
+      <nav class="nav"><a href="index.html#colecao">Loja</a><a href="garantia.html">Garantia</a><a href="login.html">Login/Cadastrar</a></nav>
+      <button class="cart-button" type="button" data-open-cart><span>Sacola</span><strong data-cart-count>0</strong></button>
+    </header>
+    <main class="tracking-page">
+      <section class="section-heading compact">
+        <p class="eyebrow">Rastreamento</p>
+        <h1>Acompanhe seu pedido.</h1>
+      </section>
+      <section class="tracking-layout">
+        <form class="account-form" data-tracking-form>
+          <h2>Buscar pedido</h2>
+          <label>Codigo do pedido ou rastreio<input name="code" required placeholder="Ex: ABC123 ou inicio do pedido" /></label>
+          <label>E-mail da compra<input name="email" type="email" placeholder="voce@email.com" /></label>
+          <button class="button primary full" type="submit">Rastrear</button>
+          <p data-tracking-status></p>
+        </form>
+        <div class="tracking-result" data-tracking-result></div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="products.js"></script><script src="shop.js"></script><script src="layout.js"></script><script src="tracking.js"></script>
+  </body>
+</html>

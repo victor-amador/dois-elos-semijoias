@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Perfil | Dois Elos Semijoias</title>
+    <meta name="description" content="Area da cliente Dois Elos Semijoias." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-dois-elos-crop.jpeg" alt="Dois Elos Semijoias" /></a>
+      <nav class="nav"><a href="index.html">Inicio</a><a href="index.html#colecao">Loja</a><a href="compras.html">Minhas Compras</a><a href="login.html">Login/Cadastrar</a></nav>
+      <button class="cart-button" type="button" data-open-cart><span>Sacola</span><strong data-cart-count>0</strong></button>
+    </header>
+    <main class="account-dashboard">
+      <section class="section-heading compact"><p class="eyebrow">Area da cliente</p><h1>Meu Perfil</h1></section>
+      <section class="profile-grid">
+        <form class="account-form" data-profile-form>
+          <h2>Informacoes pessoais</h2>
+          <label>Nome<input name="name" /></label>
+          <label>Sobrenome<input name="lastName" /></label>
+          <label>E-mail<input name="email" type="email" /></label>
+          <label>Telefone<input name="phone" /></label>
+          <label>CPF<input name="cpf" /></label>
+          <label>Data de nascimento<input name="birthDate" type="date" /></label>
+          <button class="button primary full" type="submit">Salvar perfil</button>
+          <p data-profile-status></p>
+        </form>
+        <form class="account-form" id="enderecos" data-address-form>
+          <h2>Enderecos</h2>
+          <label>Apelido<input name="label" placeholder="Casa, trabalho..." /></label>
+          <label>CEP<input name="cep" /></label>
+          <label>Endereco<input name="address" /></label>
+          <button class="button primary full" type="submit">Cadastrar endereco</button>
+          <div class="admin-list" data-address-list></div>
+        </form>
+        <form class="account-form" id="seguranca">
+          <h2>Seguranca</h2>
+          <label>Senha atual<input type="password" /></label>
+          <label>Nova senha<input type="password" /></label>
+          <button class="button ghost full" type="button">Alterar senha</button>
+          <a href="login.html">Recuperar senha</a>
+        </form>
+      </section>
+    </main>
+    <dialog class="cart-modal" data-cart-modal><div class="modal-header"><h2>Sua sacola</h2><button type="button" data-close-cart>x</button></div><div class="cart-items" data-cart-items></div><div class="cart-total"><span>Total</span><strong data-cart-total>R$ 0,00</strong></div><a class="button primary full" data-checkout href="#">Finalizar compra</a></dialog>
+    <script src="products.js"></script><script src="shop.js"></script><script src="layout.js"></script><script src="profile.js"></script>
+  </body>
+</html>

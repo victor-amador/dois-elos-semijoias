@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | Dois Elos Semijoias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-dois-elos-crop.jpeg" alt="Dois Elos Semijoias" /></a>
+      <nav class="nav"><a href="index.html#colecao">Loja</a><a href="login.html">Login/Cadastro</a></nav>
+      <button class="cart-button" type="button" data-open-cart><span>Sacola</span><strong data-cart-count>0</strong></button>
+    </header>
+
+    <main class="admin-page">
+      <section class="section-heading compact">
+        <p class="eyebrow">Painel administrativo</p>
+        <h1>Produtos, pedidos e clientes.</h1>
+      </section>
+
+      <section class="dashboard-stats" data-dashboard-stats></section>
+      <section class="admin-reports" data-admin-reports></section>
+
+      <section class="admin-grid">
+        <form class="admin-form" data-product-form>
+          <h2>Cadastrar produto</h2>
+          <label>Nome<input name="name" required placeholder="Ex: Colar Riviera" /></label>
+          <label>Categoria<input name="category" required placeholder="colares, brincos, aneis..." /></label>
+          <label>Preco<input name="price" required type="number" step="0.01" placeholder="129.90" /></label>
+          <label>Estoque<input name="stock" type="number" placeholder="10" /></label>
+          <label>Imagem principal<input name="imageFile" type="file" accept="image/jpeg,image/png,image/webp" /></label>
+          <label>Ou URL/caminho da imagem<input name="image" placeholder="assets/colar-elos.png ou https://..." /></label>
+          <label>Descricao<textarea name="description" placeholder="Descricao curta"></textarea></label>
+          <label>Detalhes<textarea name="details" placeholder="Banho, medidas, garantia..."></textarea></label>
+          <div class="checkbox-row">
+            <label><input name="isNew" type="checkbox" /> Novidade</label>
+            <label><input name="isBestSeller" type="checkbox" /> Mais vendido</label>
+          </div>
+          <button class="button primary full" type="submit">Salvar produto</button>
+          <p data-admin-status></p>
+        </form>
+
+        <section class="admin-panel">
+          <h2>Pedidos</h2>
+          <div data-admin-orders class="admin-list"></div>
+        </section>
+
+        <section class="admin-panel admin-order-detail" data-order-detail>
+          <h2>Detalhe do pedido</h2>
+          <p class="muted-copy">Selecione um pedido para ver cliente, produtos, endereco, pagamento e envio.</p>
+        </section>
+
+        <section class="admin-panel">
+          <h2>Estoque baixo</h2>
+          <div data-admin-stock class="admin-list"></div>
+        </section>
+
+        <section class="admin-panel">
+          <h2>Cupons</h2>
+          <form class="admin-form compact-form" data-coupon-form>
+            <label>Codigo<input name="code" placeholder="DOISELOS10" required /></label>
+            <label>Tipo<select name="type"><option value="percent">Percentual</option><option value="fixed">Valor fixo</option></select></label>
+            <label>Valor<input name="value" type="number" step="0.01" required /></label>
+            <label>Minimo da compra<input name="minSubtotal" type="number" step="0.01" value="0" /></label>
+            <label>Validade<input name="expiresAt" type="date" /></label>
+            <label>Maximo de usos<input name="maxUses" type="number" /></label>
+            <button class="button primary full" type="submit">Criar cupom</button>
+          </form>
+          <div data-admin-coupons class="admin-list"></div>
+        </section>
+
+        <section class="admin-panel">
+          <h2>Clientes</h2>
+          <div data-admin-customers class="admin-list"></div>
+        </section>
+
+        <section class="admin-panel">
+          <h2>Notificacoes</h2>
+          <div data-admin-notifications class="admin-list"></div>
+        </section>
+      </section>
+    </main>
+
+    <dialog class="cart-modal" data-cart-modal>
+      <div class="modal-header"><h2>Sua sacola</h2><button type="button" data-close-cart>x</button></div>
+      <div class="cart-items" data-cart-items></div>
+      <div class="cart-total"><span>Total</span><strong data-cart-total>R$ 0,00</strong></div>
+      <a class="button primary full" data-checkout href="#">Finalizar compra</a>
+    </dialog>
+    <script src="products.js"></script>
+    <script src="shop.js"></script>
+    <script src="layout.js"></script>
+    <script src="admin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,243 @@
+{
+  "customers": [
+    {
+      "id": "73c8f0f7-f449-4ad8-8d5f-e4c4735ec494",
+      "name": "Victor Hugo",
+      "email": "vr830266@gmail.com",
+      "salt": "292e0652e14d2184b0becd4069f2a63f",
+      "passwordHash": "2e894746c8a99bec05991fceea977496057ddd1fef8ae3fe9b96a6f37772e84ca2b7aed78de0c9fa3a5165faaf673113d34fa98c7cc36fa975dd8f2332c2b41a",
+      "createdAt": "2026-06-18T19:20:04.229Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "b402a8de-5ff5-441c-9880-7adab8d7adf8",
+      "customer": {
+        "id": "73c8f0f7-f449-4ad8-8d5f-e4c4735ec494",
+        "name": "Victor Hugo",
+        "email": "vr830266@gmail.com",
+        "createdAt": "2026-06-18T19:20:04.229Z"
+      },
+      "items": [
+        {
+          "id": "colar-elos",
+          "name": "Colar Dois Elos",
+          "price": 129.9,
+          "quantity": 1
+        },
+        {
+          "id": "anel-luz",
+          "name": "Anel Ponto de Luz",
+          "price": 74.9,
+          "quantity": 1
+        }
+      ],
+      "total": 204.8,
+      "status": "whatsapp_pending",
+      "createdAt": "2026-06-18T19:46:46.834Z"
+    },
+    {
+      "id": "0af2f348-7731-4ec4-ad53-d83ca1687ccf",
+      "customer": {
+        "id": "73c8f0f7-f449-4ad8-8d5f-e4c4735ec494",
+        "name": "Victor Hugo",
+        "email": "vr830266@gmail.com",
+        "createdAt": "2026-06-18T19:20:04.229Z"
+      },
+      "items": [
+        {
+          "id": "anel-luz",
+          "name": "Anel Ponto de Luz",
+          "price": 74.9,
+          "quantity": 1
+        }
+      ],
+      "total": 74.9,
+      "status": "whatsapp_pending",
+      "createdAt": "2026-06-18T20:09:32.354Z"
+    },
+    {
+      "id": "1b2cfc3c-fa50-48eb-81d8-5cd7f1d4290f",
+      "customer": {
+        "id": "73c8f0f7-f449-4ad8-8d5f-e4c4735ec494",
+        "name": "Victor Hugo",
+        "email": "vr830266@gmail.com",
+        "createdAt": "2026-06-18T19:20:04.229Z"
+      },
+      "shipping": {
+        "cep": "72001717",
+        "city": "",
+        "address": "",
+        "method": "local",
+        "paymentMethod": "pix"
+      },
+      "items": [
+        {
+          "id": "colar-elos",
+          "name": "Colar Dois Elos",
+          "price": 129.9,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 129.9,
+      "shippingCost": 14.9,
+      "freeShippingDiscount": 0,
+      "total": 144.8,
+      "paymentMethod": "pix",
+      "status": "payment_pending",
+      "createdAt": "2026-06-18T21:36:05.939Z"
+    },
+    {
+      "id": "6db2432d-eb0b-4e39-961a-12cfec4e1957",
+      "customer": {
+        "id": "73c8f0f7-f449-4ad8-8d5f-e4c4735ec494",
+        "name": "Victor Hugo",
+        "email": "vr830266@gmail.com",
+        "createdAt": "2026-06-18T19:20:04.229Z"
+      },
+      "shipping": {
+        "cep": "72001717",
+        "city": "",
+        "address": "",
+        "method": "pickup",
+        "paymentMethod": "pix"
+      },
+      "items": [
+        {
+          "id": "brinco-perola",
+          "name": "Brinco Perola Serena",
+          "price": 89.9,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 89.9,
+      "shippingCost": 0,
+      "freeShippingDiscount": 0,
+      "total": 89.9,
+      "paymentMethod": "pix",
+      "status": "payment_pending",
+      "createdAt": "2026-06-20T16:28:40.719Z"
+    },
+    {
+      "id": "8dab4e31-c68c-4bad-8d8d-1a2519d378b6",
+      "customer": {
+        "id": "73c8f0f7-f449-4ad8-8d5f-e4c4735ec494",
+        "name": "Victor Hugo",
+        "email": "vr830266@gmail.com",
+        "createdAt": "2026-06-18T19:20:04.229Z"
+      },
+      "shipping": {
+        "cep": "72001717",
+        "city": "",
+        "address": "",
+        "method": "pickup",
+        "paymentMethod": "pix"
+      },
+      "items": [
+        {
+          "id": "brinco-perola",
+          "name": "Brinco Perola Serena",
+          "price": 89.9,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 89.9,
+      "shippingCost": 0,
+      "freeShippingDiscount": 0,
+      "total": 89.9,
+      "paymentMethod": "pix",
+      "status": "payment_pending",
+      "createdAt": "2026-06-23T18:10:30.730Z"
+    },
+    {
+      "id": "62d07275-b262-4c28-a550-46a1f1d83991",
+      "customer": {
+        "id": "73c8f0f7-f449-4ad8-8d5f-e4c4735ec494",
+        "name": "Victor Hugo",
+        "email": "vr830266@gmail.com",
+        "createdAt": "2026-06-18T19:20:04.229Z"
+      },
+      "shipping": {
+        "cep": "72001717",
+        "city": "",
+        "address": "",
+        "method": "local",
+        "paymentMethod": "pix"
+      },
+      "items": [
+        {
+          "id": "colar-elos",
+          "name": "Colar Dois Elos",
+          "price": 129.9,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 129.9,
+      "shippingCost": 14.9,
+      "freeShippingDiscount": 0,
+      "total": 144.8,
+      "paymentMethod": "pix",
+      "status": "payment_pending",
+      "createdAt": "2026-06-23T18:52:50.375Z"
+    },
+    {
+      "id": "9dc204d0-44f9-4518-b7d3-c62e0bd42608",
+      "customer": null,
+      "shipping": {
+        "cep": "",
+        "city": "",
+        "address": "",
+        "method": "standard",
+        "paymentMethod": "pix"
+      },
+      "items": [
+        {
+          "id": "colar-elos",
+          "name": "Colar Dois Elos",
+          "price": 129.9,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 129.9,
+      "shippingCost": 24.9,
+      "freeShippingDiscount": 0,
+      "total": 154.8,
+      "paymentMethod": "pix",
+      "status": "payment_pending",
+      "createdAt": "2026-06-24T00:12:42.507Z"
+    },
+    {
+      "id": "cc285731-197b-4b8d-9d82-c47359cdfecb",
+      "customer": {
+        "id": "73c8f0f7-f449-4ad8-8d5f-e4c4735ec494",
+        "name": "Victor Hugo",
+        "email": "vr830266@gmail.com",
+        "createdAt": "2026-06-18T19:20:04.229Z"
+      },
+      "shipping": {
+        "cep": "",
+        "city": "",
+        "address": "",
+        "method": "standard",
+        "paymentMethod": "pix"
+      },
+      "items": [
+        {
+          "id": "colar-riviera-cristal-banhada-a-ouro-18k-1782248548510",
+          "name": "Colar Riviera Cristal Banhada a Ouro 18k",
+          "price": 129.9,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 129.9,
+      "shippingCost": 24.9,
+      "freeShippingDiscount": 0,
+      "total": 154.8,
+      "paymentMethod": "pix",
+      "status": "payment_pending",
+      "createdAt": "2026-06-24T00:20:40.569Z"
+    }
+  ],
+  "reviews": [],
+  "coupons": []
+}

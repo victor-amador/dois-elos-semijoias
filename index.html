@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dois Elos Semijoias</title>
+    <meta name="description" content="Loja virtual da Dois Elos Semijoias." />
+    <meta property="og:title" content="Dois Elos Semijoias" />
+    <meta property="og:description" content="Semijoias delicadas, elegantes e selecionadas." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/logo-dois-elos-crop.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Dois Elos Semijoias">
+        <img class="brand-logo" src="assets/logo-dois-elos-crop.jpeg" alt="Dois Elos Semijoias" />
+      </a>
+      <nav class="nav" aria-label="Menu principal">
+        <a href="index.html">Inicio</a>
+        <a href="#colecao">Aneis</a>
+        <a href="#colecao">Colares</a>
+        <a href="#colecao">Pulseiras</a>
+        <a href="#colecao">Brincos</a>
+        <a href="#mais-vendidos">Promocoes</a>
+        <a href="#contato">Contato</a>
+        <a href="login.html">Login/Cadastrar</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+      <label class="header-search"><input type="search" data-search placeholder="Buscar semijoia" /></label>
+      <button class="cart-button" type="button" data-open-cart aria-label="Abrir sacola">
+        <span>Sacola</span><strong data-cart-count>0</strong>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow">Nova colecao Dois Elos</p>
+          <h1>Semijoias delicadas para iluminar sua rotina.</h1>
+          <p>Pecas finas, femininas e versateis, escolhidas para criar presenca com leveza.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#colecao">Comprar agora</a>
+            <a class="button ghost" href="login.html">Entrar ou cadastrar</a>
+          </div>
+        </div>
+        <div class="hero-showcase" aria-label="Destaque de semijoias">
+          <div class="showcase-card main-piece"><img src="assets/colar-elos.png" alt="Colar dourado com elos delicados" /></div>
+          <div class="showcase-card floating ring"><img src="assets/anel-luz.svg" alt="Anel dourado com pedra luminosa" /></div>
+          <div class="showcase-card floating earrings"><img src="assets/brinco-perola.svg" alt="Brinco dourado com perola" /></div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Beneficios da loja">
+        <span>Compra pelo site</span>
+        <span>Favoritos e sacola salvos</span>
+        <span>Entrega combinada com cuidado</span>
+      </section>
+
+      <section class="section-heading" id="novidades">
+        <p class="eyebrow">Novidades</p>
+        <h2>Acabaram de chegar</h2>
+      </section>
+      <section class="product-grid shelf-grid" data-new-products></section>
+
+      <section class="section-heading" id="mais-vendidos">
+        <p class="eyebrow">Mais vendidos</p>
+        <h2>Escolhas que sempre brilham</h2>
+      </section>
+      <section class="product-grid shelf-grid" data-best-products></section>
+
+      <section class="feedback-section">
+        <div class="section-heading compact"><p class="eyebrow">Feedbacks</p><h2>Experiencias de quem escolheu a Dois Elos</h2></div>
+        <div class="feedback-grid" data-home-feedbacks></div>
+      </section>
+
+      <section class="section-heading" id="colecao">
+        <p class="eyebrow">Loja completa</p>
+        <h2>Encontre a peca ideal</h2>
+      </section>
+
+      <section class="shop-tools" aria-label="Ferramentas da loja">
+        <label class="search-box">
+          <span>Buscar peca</span>
+          <input type="search" data-search placeholder="Buscar por colar, brinco, anel..." autocomplete="off" />
+        </label>
+        <label class="sort-box">
+          <span>Ordenar</span>
+          <select data-sort>
+            <option value="featured">Destaques</option>
+            <option value="price-asc">Menor preco</option>
+            <option value="price-desc">Maior preco</option>
+            <option value="name">Nome</option>
+          </select>
+        </label>
+        <div class="shop-summary" data-shop-summary>0 pecas encontradas</div>
+      </section>
+
+      <section class="shop-layout">
+        <aside class="filters" aria-label="Filtros de produtos">
+          <h3>Categorias</h3>
+          <button class="filter active" type="button" data-filter="todas">Todas</button>
+          <button class="filter" type="button" data-filter="novidades">Novidades</button>
+          <button class="filter" type="button" data-filter="mais-vendidos">Mais vendidos</button>
+          <button class="filter" type="button" data-filter="colares">Colares</button>
+          <button class="filter" type="button" data-filter="brincos">Brincos</button>
+          <button class="filter" type="button" data-filter="aneis">Aneis</button>
+          <button class="filter" type="button" data-filter="pulseiras">Pulseiras</button>
+          <button class="filter" type="button" data-filter="favoritos">Favoritos</button>
+        </aside>
+        <div class="product-grid" data-products></div>
+      </section>
+
+      <section class="editorial" id="garantia">
+        <div>
+          <p class="eyebrow">Experiencia Dois Elos</p>
+          <h2>Uma loja pensada para comprar com calma, beleza e confianca.</h2>
+        </div>
+        <div class="feature-list">
+          <article><h3>Conta da cliente</h3><p>Base visual para login e cadastro, pronta para conectar a um backend no futuro.</p></article>
+          <article><h3>Produto completo</h3><p>Cada peca tem pagina propria com fotos, detalhes, garantia e sugestoes.</p></article>
+          <article><h3>Sacola inteligente</h3><p>A sacola calcula frete, aplica frete gratis e registra o pedido no site.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contato">
+      <div><strong>Dois Elos Semijoias</strong><p>Semijoias delicadas para mulheres que carregam brilho nos detalhes.</p></div>
+      <div class="footer-links">
+        <a href="https://instagram.com/doiselosemijoias" target="_blank" rel="noreferrer">@doiselosemijoias</a>
+        <a href="https://wa.me/5561992656158" target="_blank" rel="noreferrer">WhatsApp: (61) 99265-6158</a>
+      </div>
+    </footer>
+
+    <a class="floating-whatsapp" href="https://wa.me/5561992656158?text=Ola! Gostaria de tirar uma duvida sobre um produto." target="_blank" rel="noreferrer" aria-label="Falar com a Dois Elos no WhatsApp"><span>WA</span></a>
+
+    <dialog class="cart-modal" data-cart-modal>
+      <div class="modal-header"><h2>Sua sacola</h2><button type="button" data-close-cart aria-label="Fechar sacola">x</button></div>
+      <div class="cart-items" data-cart-items></div>
+      <div class="cart-total"><span>Total</span><strong data-cart-total>R$ 0,00</strong></div>
+      <a class="button primary full" data-checkout href="#">Finalizar compra</a>
+    </dialog>
+
+    <script src="products.js"></script>
+    <script src="shop.js"></script>
+    <script src="layout.js"></script>
+    <script src="hero.js"></script><script src="support.js"></script>
+    <script src="home.js"></script>
+  </body>
+</html>

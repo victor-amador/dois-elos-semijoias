@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minhas Compras | Dois Elos Semijoias</title>
+    <meta name="description" content="Historico de compras da cliente Dois Elos." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-dois-elos-crop.jpeg" alt="Dois Elos Semijoias" /></a>
+      <nav class="nav"><a href="index.html">Inicio</a><a href="index.html#colecao">Loja</a><a href="perfil.html">Meu Perfil</a><a href="login.html">Login/Cadastrar</a></nav>
+      <button class="cart-button" type="button" data-open-cart><span>Sacola</span><strong data-cart-count>0</strong></button>
+    </header>
+    <main class="account-dashboard">
+      <section class="section-heading compact"><p class="eyebrow">Historico</p><h1>Minhas Compras</h1></section>
+      <section class="admin-panel"><div class="admin-list" data-orders-list></div></section>
+    </main>
+    <dialog class="cart-modal" data-cart-modal><div class="modal-header"><h2>Sua sacola</h2><button type="button" data-close-cart>x</button></div><div class="cart-items" data-cart-items></div><div class="cart-total"><span>Total</span><strong data-cart-total>R$ 0,00</strong></div><a class="button primary full" data-checkout href="#">Finalizar compra</a></dialog>
+    <script src="products.js"></script><script src="shop.js"></script><script src="layout.js"></script><script src="orders.js"></script>
+  </body>
+</html>

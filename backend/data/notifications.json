@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1782570862656-103a1adff19d9",
+    "event": "paid",
+    "orderId": "950df75a-9987-48b7-977d-3cd58f900eb3",
+    "orderCode": "DE-950DF75A",
+    "to": "vr830266@gmail.com",
+    "channels": {
+      "email": true,
+      "whatsapp": false
+    },
+    "subject": "Pagamento aprovado do pedido DE-950DF75A",
+    "message": "Ola, Victor Hugo Rodrigues Amador. Seu pagamento do pedido DE-950DF75A foi aprovado.\nTotal: R$ 149,87\nPagamento: Pix\nEntrega: Retirada combinada\nEndereco: Trecho 03 cj 8 lt 8  - Brasília\nProdutos: 1x Brinco Argola Trançada Lisa Banhado a Ouro 18k",
+    "status": "local_outbox",
+    "createdAt": "2026-06-27T14:34:22.656Z"
+  },
+  {
+    "id": "1782570848308-389ab08b1ed47",
+    "event": "created",
+    "orderId": "950df75a-9987-48b7-977d-3cd58f900eb3",
+    "orderCode": "DE-950DF75A",
+    "to": "vr830266@gmail.com",
+    "channels": {
+      "email": true,
+      "whatsapp": false
+    },
+    "subject": "Pedido DE-950DF75A criado - Dois Elos Semijoias",
+    "message": "Ola, Victor Hugo Rodrigues Amador. Recebemos seu pedido DE-950DF75A.\nTotal: R$ 149,87\nPagamento: Pix\nEntrega: Retirada combinada\nEndereco: Trecho 03 cj 8 lt 8  - Brasília\nProdutos: 1x Brinco Argola Trançada Lisa Banhado a Ouro 18k",
+    "status": "local_outbox",
+    "createdAt": "2026-06-27T14:34:08.308Z"
+  }
+]

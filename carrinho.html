@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sacola | Dois Elos Semijoias</title>
+    <meta name="description" content="Revise sua sacola na Dois Elos Semijoias." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="store-page">
+    <header class="topbar">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-dois-elos-crop.jpeg" alt="Dois Elos Semijoias" /></a>
+      <nav class="nav"><a href="index.html">Inicio</a><a href="index.html#colecao">Comprar</a><a href="favoritos.html">Favoritos</a><a href="login.html">Login/Cadastrar</a></nav>
+      <button class="cart-button current-cart" type="button" aria-label="Sacola"><span>Sacola</span><strong data-cart-count>0</strong></button>
+    </header>
+    <main class="cart-page">
+      <div class="breadcrumb"><a href="index.html">Inicio</a><span>/</span><strong>Sacola</strong></div>
+      <section class="cart-page-heading"><p class="eyebrow">Sua selecao</p><h1>Sacola</h1><p data-cart-page-caption>Revise suas escolhas antes de seguir.</p></section>
+      <section class="cart-page-layout">
+        <div class="cart-page-items" data-cart-page-items></div>
+        <aside class="cart-page-summary" data-cart-page-summary></aside>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="products.js"></script><script src="shop.js"></script><script src="layout.js"></script><script src="cart.js"></script>
+  </body>
+</html>

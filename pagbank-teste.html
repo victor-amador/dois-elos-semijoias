@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagamento Seguro | Dois Elos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="mock-payment-page">
+    <header class="checkout-header">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo-dois-elos-crop.jpeg" alt="Dois Elos Semijoias" /></a>
+      <span class="checkout-security">Ambiente seguro de teste</span>
+    </header>
+    <main class="mock-payment-layout">
+      <section class="mock-payment-panel">
+        <p class="eyebrow">Checkout PagBank simulado</p>
+        <h1>Finalize seu pagamento</h1>
+        <p class="muted-copy">Esta tela reproduz a experiencia do cliente para testes locais. Nenhum valor sera cobrado.</p>
+
+        <div class="mock-methods" data-payment-methods>
+          <button type="button" data-method="credit_card" class="active">Cartao</button>
+          <button type="button" data-method="pix">Pix</button>
+          <button type="button" data-method="boleto">Boleto</button>
+        </div>
+
+        <form class="mock-payment-form" data-card-form>
+          <div class="form-grid">
+            <label>Numero do cartao<input name="cardNumber" inputmode="numeric" maxlength="19" placeholder="4111 1111 1111 1111" required /></label>
+            <label>Nome impresso<input name="cardName" placeholder="Nome do titular" required /></label>
+            <label>Validade<input name="expiry" placeholder="MM/AA" maxlength="5" required /></label>
+            <label>CVV<input name="cvv" inputmode="numeric" maxlength="4" placeholder="123" required /></label>
+            <label>Parcelas<select name="installments"><option value="1">1x sem juros</option><option value="2">2x sem juros</option><option value="3">3x sem juros</option><option value="6">6x sem juros</option><option value="12">12x com simulacao</option></select></label>
+            <label>CPF do titular<input name="taxId" placeholder="000.000.000-00" /></label>
+          </div>
+          <button class="button primary full" type="submit">Pagar com cartao</button>
+        </form>
+
+        <form class="mock-payment-form hidden" data-pix-form>
+          <div class="pix-box">
+            <strong>Pix copia e cola</strong>
+            <code data-pix-code>00020126580014BR.GOV.BCB.PIX0136DOIS-ELOS-SEMJOIAS5204000053039865802BR5920DOIS ELOS SEMIJOIAS6008BRASILIA</code>
+          </div>
+          <button class="button primary full" type="submit">Simular Pix pago</button>
+        </form>
+
+        <form class="mock-payment-form hidden" data-boleto-form>
+          <div class="pix-box">
+            <strong>Linha digitavel simulada</strong>
+            <code>34191.79001 01043.510047 91020.150008 8 98760000000000</code>
+          </div>
+          <button class="button primary full" type="submit">Simular boleto pago</button>
+        </form>
+
+        <button class="button ghost full" type="button" data-refuse-payment>Simular pagamento recusado</button>
+        <p class="checkout-page-status" data-mock-status></p>
+      </section>
+
+      <aside class="mock-order-summary" data-mock-order>
+        <h2>Carregando pedido...</h2>
+      </aside>
+    </main>
+    <script src="pagbank-teste.js"></script>
+  </body>
+</html>
