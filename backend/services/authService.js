@@ -29,6 +29,7 @@ function verifyJwt(token) {
   if (!header || !body || !signature) return null;
   const unsigned = `${header}.${body}`;
   const expected = crypto.createHmac("sha256", jwtSecret).update(unsigned).digest("base64url");
+  if (signature.length !== expected.length) return null;
   if (!crypto.timingSafeEqual(Buffer.from(signature), Buffer.from(expected))) return null;
   const payload = JSON.parse(Buffer.from(body, "base64url").toString("utf8"));
   if (payload.exp && payload.exp < Math.floor(Date.now() / 1000)) return null;

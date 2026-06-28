@@ -1,5 +1,50 @@
 [
   {
+    "id": "1782607984482-39b60c094c1da",
+    "event": "paid",
+    "orderId": "bb4c1b61-4b98-4819-ad3a-6033821e944d",
+    "orderCode": "DE-BB4C1B61",
+    "to": "doutor.geovana9@gmail.com",
+    "channels": {
+      "email": true,
+      "whatsapp": false
+    },
+    "subject": "Pagamento aprovado do pedido DE-BB4C1B61",
+    "message": "Ola, Geovana Cristine Doutor Ribeiro Silva. Seu pagamento do pedido DE-BB4C1B61 foi aprovado.\nTotal: R$ 219,74\nPagamento: Cartao de credito\nEntrega: Correios/transportadora\nEndereco: Trecho 03 cj 8 lt 8  - Brasília\nProdutos: 1x Colar Ponto De Luz Zircônia Banho Ouro 18k, 1x Pulseira Elo Fino",
+    "status": "local_outbox",
+    "createdAt": "2026-06-28T00:53:04.482Z"
+  },
+  {
+    "id": "1782607925163-2f8fda8017916",
+    "event": "created",
+    "orderId": "bb4c1b61-4b98-4819-ad3a-6033821e944d",
+    "orderCode": "DE-BB4C1B61",
+    "to": "doutor.geovana9@gmail.com",
+    "channels": {
+      "email": true,
+      "whatsapp": false
+    },
+    "subject": "Pedido DE-BB4C1B61 criado - Dois Elos Semijoias",
+    "message": "Ola, Geovana Cristine Doutor Ribeiro Silva. Recebemos seu pedido DE-BB4C1B61.\nTotal: R$ 219,74\nPagamento: Cartao de credito\nEntrega: Correios/transportadora\nEndereco: Trecho 03 cj 8 lt 8  - Brasília\nProdutos: 1x Colar Ponto De Luz Zircônia Banho Ouro 18k, 1x Pulseira Elo Fino",
+    "status": "local_outbox",
+    "createdAt": "2026-06-28T00:52:05.163Z"
+  },
+  {
+    "id": "1782585038053-7dfaacc550393",
+    "event": "created",
+    "orderId": "39ed10ad-aa92-4b60-91c8-bfd56a0443b1",
+    "orderCode": "DE-39ED10AD",
+    "to": "vr830266@gmail.com",
+    "channels": {
+      "email": true,
+      "whatsapp": false
+    },
+    "subject": "Pedido DE-39ED10AD criado - Dois Elos Semijoias",
+    "message": "Ola, Victor Hugo Rodrigues Amador. Recebemos seu pedido DE-39ED10AD.\nTotal: R$ 299,74\nPagamento: Pix\nEntrega: Retirada combinada\nEndereco: Trecho 03 cj 8 lt 8  - Brasília\nProdutos: 2x Brinco Argola Trançada Lisa Banhado a Ouro 18k",
+    "status": "local_outbox",
+    "createdAt": "2026-06-27T18:30:38.053Z"
+  },
+  {
     "id": "1782570862656-103a1adff19d9",
     "event": "paid",
     "orderId": "950df75a-9987-48b7-977d-3cd58f900eb3",

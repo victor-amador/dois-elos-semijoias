@@ -8,9 +8,10 @@
   "scripts": {
     "dev": "node backend/server.js",
     "start": "node backend/server.js",
-    "check": "node --check backend/server.js && node --check backend/db.js && node --check backend/services/pagBankService.js && node --check shop.js && node --check checkout.js && node --check home.js && node --check product.js && node --check login.js && node --check admin.js && node --check layout.js && node --check tracking.js && node --check pagbank-teste.js"
+    "check": "node --check backend/server.js && node --check backend/db.js && node --check backend/services/authService.js && node --check backend/services/validationService.js && node --check backend/services/auditLogger.js && node --check backend/services/pagBankService.js && node --check shop.js && node --check checkout.js && node --check home.js && node --check product.js && node --check login.js && node --check admin.js && node --check layout.js && node --check tracking.js && node --check pagbank-teste.js"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.3",
     "pg": "^8.13.1"
   }
 }

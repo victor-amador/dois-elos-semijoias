@@ -1,0 +1,5 @@
+{"event":"order_created","at":"2026-06-27T18:30:38.012Z","orderId":"39ed10ad-aa92-4b60-91c8-bfd56a0443b1","email":"vr830266@gmail.com","total":299.74}
+{"event":"payment_created","at":"2026-06-27T18:30:38.016Z","orderId":"39ed10ad-aa92-4b60-91c8-bfd56a0443b1","provider":"pagbank","mode":"local_mock"}
+{"event":"order_created","at":"2026-06-28T00:52:05.123Z","orderId":"bb4c1b61-4b98-4819-ad3a-6033821e944d","email":"doutor.geovana9@gmail.com","total":219.74}
+{"event":"payment_created","at":"2026-06-28T00:52:05.128Z","orderId":"bb4c1b61-4b98-4819-ad3a-6033821e944d","provider":"pagbank","mode":"local_mock"}
+{"event":"payment_paid","at":"2026-06-28T00:53:04.483Z","orderId":"bb4c1b61-4b98-4819-ad3a-6033821e944d","provider":"pagbank_mock"}
